@@ -1,0 +1,64 @@
+body {
+background-color:black;
+
+color:white;
+font-family: Audiowide;
+
+overflow-x:hidden;
+}
+
+/* HEADER */
+.header_image{
+	background-image: url(../images/adventure-dark-field-37608.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 25% 100%;
+	height: 100vh;
+}
+.header_title{
+	font-size: 7.5rem;
+}
+.header_sub_title{
+	font-size: 3rem;
+}
+.header_intro_text{
+	font-size:1.5rem;
+	font-family:Monda;
+}
+
+/* TECHNOLOGIES */
+.content_main_title{
+	text-align: center;
+	color: #ce8751;
+	font-size: 2.5rem;
+}
+.list_techo div{
+	display: inline-block;
+	border: 2px solid #ce8751;
+	padding: 5px;
+	margin-right: 3px;
+}
+
+/* PROJECTS */
+.project_title{
+	font-size:2.5rem;
+}
+.btn_visit_site{
+	border: 5px solid #ce8751;
+	padding: 10px;
+	cursor: pointer;
+	font-size: 1.5rem;
+	display: inline-block;
+}
+
+.project_image{
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 430px;
+}
+.project_image_better_vote{
+	background-image: url(../images/better_vote.png);
+}
+.project_image_tool_form{
+	background-image: url(../images/outil_formulaire.png);
+}

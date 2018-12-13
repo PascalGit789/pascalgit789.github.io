@@ -21,6 +21,7 @@ overflow-x:hidden;
 .header_main_text{
 	text-align:right;
 	margin-top: 70px;
+	padding-right: 0px;
 }
 .header_main_text h1{
 	font-size: 4.5rem;
@@ -33,6 +34,7 @@ overflow-x:hidden;
 	text-align: center;
 	color: #ce8751;
 	font-size: 2.5rem;
+	margin-top: 30px;
 }
 .list_techo div{
 	display: inline-block;
@@ -43,6 +45,10 @@ overflow-x:hidden;
 }
 
 /* PROJECTS */
+.row_project{
+	height:355px;
+	margin-bottom:90px;
+}
 .project_title{
 	font-size:2.5rem;
 }
@@ -56,7 +62,6 @@ overflow-x:hidden;
 	cursor: pointer;
 	font-size: 1.5rem;
 	display: inline-block;
-	
 }
 .btn_visit_site a{
 	text-decoration: none;

@@ -6,6 +6,9 @@ font-family: Audiowide;
 
 overflow-x:hidden;
 }
+.main_color{
+	color:#CE8751;
+}
 
 /* HEADER */
 .header_image{
@@ -15,17 +18,16 @@ overflow-x:hidden;
 	background-position: 25% 100%;
 	height: 100vh;
 }
-.header_title{
-	font-size: 7.5rem;
+.header_main_text{
+	text-align:right;
+	margin-top: 70px;
 }
-.header_sub_title{
-	font-size: 3rem;
+.header_main_text h1{
+	font-size: 4.5rem;
 }
-.header_intro_text{
-	font-size:1.5rem;
-	font-family:Monda;
+.header_main_text h2{
+	margin-top:60px;
 }
-
 /* TECHNOLOGIES */
 .content_main_title{
 	text-align: center;

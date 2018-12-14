@@ -5,18 +5,29 @@ color:white;
 font-family: Audiowide;
 
 overflow-x:hidden;
+
+
+background-image: url(../images/testSkyStars4.png);
+animation: animatedBackground 2250s linear infinite;
+background-position:100% 100%;
 }
+@keyframes animatedBackground {
+    from { background-position: 100% 100%; }
+    to { background-position: 100% 500%; }
+}
+
 .main_color{
 	color:#CE8751;
 }
 
 /* HEADER */
 .header_image{
-	background-image: url(../images/adventure-dark-field-37608.jpg);
+	background-image: url(../images/header_background2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 25% 100%;
 	height: 100vh;
+	min-height: 630px;
 }
 .header_main_text{
 	text-align:right;
@@ -30,10 +41,13 @@ overflow-x:hidden;
 	margin-top:60px;
 }
 /* TECHNOLOGIES */
+h4{
+	font-size: 2rem;
+	color: #ce8751;
+}	
 .content_main_title{
 	text-align: center;
-	color: #ce8751;
-	font-size: 2.5rem;
+	font-size: 2.8rem;
 	margin-top: 30px;
 }
 .list_techo div{
@@ -45,12 +59,21 @@ overflow-x:hidden;
 }
 
 /* PROJECTS */
+.header_project{
+	margin-top:160px;
+}
 .row_project{
 	height:355px;
-	margin-bottom:90px;
+	margin-bottom:100px;
 }
-.project_title{
-	font-size:2.5rem;
+.col_project_description{
+	/* min-height:250px; */
+}
+.row_project_image_margin_1{
+	margin-bottom:40px;
+}
+.row_project_image_margin_2{
+	margin-bottom:82px;
 }
 .project_description{
 	font-family: Monda;
@@ -62,6 +85,10 @@ overflow-x:hidden;
 	cursor: pointer;
 	font-size: 1.5rem;
 	display: inline-block;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	text-align: center;
 }
 .btn_visit_site a{
 	text-decoration: none;
@@ -80,6 +107,9 @@ overflow-x:hidden;
 	background-repeat: no-repeat;
 	height: 430px;
 }
+.project_image_jeu_space{
+	background-image: url(../images/jeuImage.png);
+}
 .project_image_better_vote{
 	background-image: url(../images/better_vote.png);
 }
@@ -91,5 +121,51 @@ overflow-x:hidden;
 }
 .project_image_aster{
 	background-image: url(../images/groupeAster.jpg);
-	background-position: 50% 100%;
+	background-position: 50% 0%;
 }
+
+
+@media (max-width: 1500px) {
+	.btn_visit_site{
+		bottom:auto;
+	}
+}
+
+@media (max-width: 1200px) {
+	.row_project{
+		height:300px;
+	}
+	
+}
+
+/* For medium screen and under */
+@media (max-width: 992px){
+	.row_project{
+		height:auto;
+		min-height:350px;
+	}
+	.project_image{
+		height: 430px;
+	}
+	.col_project_better_vote{
+		padding-bottom: 67px; /* Button height */
+    margin-bottom: 1rem;
+	}
+	.btn_visit_site{
+		left: 0px;
+	}
+}
+
+/* For small screen and under */
+@media (max-width: 768px) {
+	.project_image {
+			height: 435px;
+	}
+}
+
+@media (max-width: 576px) {
+  .project_image {
+			height: 320px;
+	}
+}
+
